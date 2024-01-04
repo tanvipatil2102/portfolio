@@ -1,0 +1,215 @@
+:root {
+    --primary: #4294E3;
+    --secondary: #8F12FD;
+    --light: #F0F6FF;
+    --dark: #262B47
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;0,900;1,600;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.hero-navbar.navbar{
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+.hero-navbar .logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--light);
+}
+
+.navbar .navbar-nav.navBar-item li{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav.navBar-item li a{
+    color: var(--light)
+}
+
+.hero-navbar .navbar-item .activ{
+    color: var(--secondary);
+}
+
+.hero-header {
+    margin-bottom: 6rem;
+    padding: 16rem 0 0 0;
+    background: url(../images/bg-circle.png),url(../images/bg-triangle.png),url(../images/bg-bottom.png),linear-gradient(to bottom right,var(--primary),var(--secondary));
+    background-position: left 0 top 0,right 0 top 50%,center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.bgcolor{
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+
+.main-heading{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+/* ####################### CSS for about section starts here ####################### */
+
+.info {
+    color: var(--primary);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.para{
+    color: rgb(83, 80, 80);
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.myInfo i{
+    color: var(--secondary);
+    margin-right: 20px;
+}
+
+.myInfo h3{
+    color: var(--dark);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 22px;
+    
+}
+
+.btninfo{
+    background-image: linear-gradient(75deg, var(--primary), var(--secondary));
+    padding: 15px 25px;
+    color: var(--light);
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+.btninfo a{
+    display: inline-block;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.btninfo:hover{
+    background-image: linear-gradient(75deg, var(--secondary), var(--primary));
+    font-weight: 600;
+    color: var(--light);
+}
+
+.img img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 4px solid var(--primary);
+    box-shadow: 4px 4px 35px var(--primary);
+    transition: 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.img img:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 30px 15px var(--primary);
+}
+
+/* ####################### CSS for skills section starts here ####################### */
+
+.main-card{
+    border: none;
+}
+
+.skill-card{
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.skill-card:hover{
+    transform: rotateY(45deg) scale(1.08);
+}
+
+.skill-title{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.rating i{
+    color: gold;
+}
+
+.para1{
+    color: var(--light);
+}
+
+/* ####################### CSS for skills section starts here ####################### */
+
+.task-section{
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.task-imgs{
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-item{
+    border-radius: 25px 5px;
+    /* background-image: linear-gradient(45deg, var(--primary), var(--secondary)); */
+    font-style: italic;
+    color: var(--light);
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.card-item:hover{
+    transform: translateY(-7px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width : 420px) {
+    .myInfo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img img{
+        height: 350px;
+        width: 250px;
+    }
+}
+
+@media all and (max-width :1200px) {
+    .hero-navbar .navbar{
+        background-color: var(--light);
+    }
+}
