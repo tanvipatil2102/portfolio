@@ -1,13 +1,14 @@
 let cl = console.log;
 
-let navar = document.getElementById('navBar');
+let navbar = document.getElementById('navBar');
 
-function onscroll () { 
+const onscroll = () => { 
     let scrollValue = window.scrollY;
-   if(scrollValue < 20){
-    navar.classList.remove("bg-light")
+    cl(scrollValue);
+   if(scrollValue < 120){
+    navbar.classList.remove("bg-light")
    }else{
-    navar.classList.add("bg-light")
+    navbar.classList.add("bg-light")
    }
 };
 
