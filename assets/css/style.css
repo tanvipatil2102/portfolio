@@ -259,6 +259,12 @@ body{
     }
 }
 
+@media all and (max-width : 1000px) {
+    .navbar .navbar-nav.navBar-item li {
+        margin-left: 0;
+    }
+}
+
 @media all and (min-width :1700px) {
     .hero-header {
         padding: 16rem 0 0 0;
