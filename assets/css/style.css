@@ -245,7 +245,12 @@ body{
 
 
 
-
+@media all and (max-width : 1000px) {
+    .navbar .navbar-nav.navBar-item li {
+        margin-left: 0;
+        text-align: center;
+    }
+}
 
 @media all and (max-width : 420px) {
     .myInfo{
@@ -256,12 +261,6 @@ body{
     .img img{
         height: 350px;
         width: 250px;
-    }
-}
-
-@media all and (max-width : 1000px) {
-    .navbar .navbar-nav.navBar-item li {
-        margin-left: 0;
     }
 }
 
